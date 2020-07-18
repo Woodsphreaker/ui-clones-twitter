@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Component from '~/components/test'
+import GlobalStyles from '~/styles/globalStyles'
+import Layout from '~/components/Layout'
 
 const App = () => {
   return (
-    <div>
-      <Component />
-    </div>
+    <>
+      <GlobalStyles />
+      <Layout />
+    </>
   )
 }
 

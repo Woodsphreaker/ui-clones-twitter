@@ -1,4 +1,4 @@
-# React web project starter
+# UI Clones - Twitter
 
 ## Checklist
 
