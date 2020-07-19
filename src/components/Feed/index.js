@@ -1,11 +1,20 @@
 import React from 'react'
+import Tweet from '~/components/Tweet'
 
-import { Container } from './styles'
+import { Container, Tab, Tweets } from './styles'
 
 function Feed() {
   return (
     <Container>
-      <div>Feed</div>
+      <Tab>Tweets</Tab>
+
+      <Tweets>
+        <Tweet>123</Tweet>
+        <Tweet>123</Tweet>
+        <Tweet>123</Tweet>
+        <Tweet>123</Tweet>
+        <Tweet>123</Tweet>
+      </Tweets>
     </Container>
   )
 }

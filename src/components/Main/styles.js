@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: min(601px, 100%);
 
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     border-left: 1px solid var(--outline);
     border-right: 1px solid var(--outline);
   }
@@ -67,7 +67,7 @@ export const BottomMenu = styled.div`
   padding: 8px min(46px, max(10vw, 10px));
   transition: opacity 0.3s linear;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 501px) {
     opacity: 0;
     pointer-events: none;
   }

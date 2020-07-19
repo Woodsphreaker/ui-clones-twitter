@@ -11,4 +11,4 @@ export {
 export { Person, Cake, Favorite } from 'styled-icons/material'
 export { ArrowLeft } from 'styled-icons/heroicons-solid'
 export { Chat } from 'styled-icons/heroicons-outline'
-// export {RocketsetIcon as Rocketseat} from '~/components/Rocketseat'
+export { RocketsetIcon } from '~/components/Rocketseat'
