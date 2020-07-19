@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import Button from '~/components/Button'
 
 import { LocationOn, Cake } from '~/styles/icons'
 
@@ -29,11 +30,68 @@ export const Avatar = styled.div`
   background-color: var(--gray);
   border: 3.75px solid var(--primary);
   border-radius: 50%;
+  position: absolute;
+  bottom: max(-60px, -10vw);
+  left: 15px;
 `
 
-export const ProfileData = styled.div``
+export const ProfileData = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: min(calc(10vw + 7px), 67px) 16px 0;
+  position: relative;
 
-export const EditButton = styled.div``
+  > h1 {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  > h2 {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--gray);
+  }
+
+  > p {
+    font-size: 15px;
+    margin-top: 11px;
+  }
+
+  > a {
+    color: var(--twitter);
+  }
+
+  > ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    > li {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: var(--gray);
+
+      > svg {
+        fill: var(--gray);
+        margin-right: 5px;
+      }
+    }
+  }
+`
+
+export const EditButton = styled(Button)`
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media screen and (min-width: 320px) {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
+`
 
 const iconsStyled = css`
   width: 20px;
@@ -49,4 +107,15 @@ export const CakeIcon = styled(Cake)`
   ${iconsStyled}
 `
 
-export const Followage = styled.div``
+export const Followage = styled.div`
+  display: flex;
+
+  > span {
+    font-size: 15px;
+    color: var(--gray);
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+`

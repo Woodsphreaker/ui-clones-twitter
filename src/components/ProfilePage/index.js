@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Container,
   Banner,
@@ -39,13 +40,15 @@ function ProfilePage() {
 
         <Followage>
           <span>
-            seguindo<strong>200</strong>
+            seguindo <strong>200</strong>
           </span>
           <span>
-            350<strong>seguidores</strong>
+            <strong>350</strong> seguidores
           </span>
         </Followage>
       </ProfileData>
+
+      <Feed />
     </Container>
   )
 }
