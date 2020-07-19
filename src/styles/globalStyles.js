@@ -1,14 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-
+  
   * {
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
-    color: var(--white)
+    color: var(--white);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
   html, body, #root {
@@ -23,9 +23,9 @@ export default createGlobalStyle`
   }
 
   body {
-    font-size: 400 14px;
+    /* font-size: 400 14px;
     font-family: Roboto, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; */
     -webkit-font-smoothing: antialiased !important;
   }
 
