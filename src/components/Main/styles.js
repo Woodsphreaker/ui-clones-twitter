@@ -21,6 +21,7 @@ export const Header = styled.div`
   padding: 8px 0 9px 13px;
   background-color: var(--primary);
   border-bottom: 1px solid var(--outline);
+  z-index: 2;
 
   > button {
     padding: 8px;
@@ -66,6 +67,8 @@ export const BottomMenu = styled.div`
   border-top: 1px solid var(--outline);
   padding: 8px min(46px, max(10vw, 10px));
   transition: opacity 0.3s linear;
+  background-color: var(--primary);
+  z-index: 2;
 
   @media screen and (min-width: 501px) {
     opacity: 0;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { RocketsetIcon, Chat, Favorite } from '~/styles/icons'
 
@@ -28,26 +28,147 @@ export const RocketseatIcon = styled(RocketsetIcon)`
   }
 `
 
-export const Body = styled.div``
+export const Body = styled.div`
+  display: flex;
+  margin-top: 3px;
+  position: relative;
+`
 
-export const Avatar = styled.div``
+export const Avatar = styled.div`
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: var(--gray);
+  position: absolute;
+`
 
-export const Content = styled.div``
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 59px;
+`
 
-export const Header = styled.div``
+export const Header = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  white-space: nowrap;
 
-export const Dot = styled.div``
+  > strong {
+    margin-right: 5px;
+  }
 
-export const Description = styled.div``
+  > span,
+  time {
+    color: var(--gray);
+  }
 
-export const ImageContent = styled.div``
+  > strong,
+  span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+`
 
-export const Icons = styled.div``
+export const Dot = styled.div`
+  background-color: var(--gray);
+  width: 2px;
+  height: 2px;
+  margin: 0 10px;
+`
 
-export const Status = styled.div``
+export const Description = styled.p`
+  font-size: 14px;
+  margin-top: 4px;
+`
 
-export const CommentIcon = styled.div``
+export const ImageContent = styled.div`
+  margin-top: 12px;
+  width: 100%;
+  height: min(285px, max(175px, 41vw));
+  border-radius: 14px;
+  background-color: var(--gray);
+  cursor: pointer;
+  transition: opacity 0.2s;
 
-export const RetweetIcon = styled.div``
+  &:hover {
+    opacity: 0.7;
+  }
+`
 
-export const LikeIcon = styled.div``
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 11px auto 0;
+  width: 100%;
+
+  @media screen and (min-width: 330px) {
+    width: 63%;
+  }
+`
+
+export const Status = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-size: 14px;
+
+  > svg {
+    margin-right: 14px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:nth-child(1) {
+    color: var(--gray);
+    > svg path {
+      color: var(--gray);
+    }
+    /* &,
+    > svg path {
+      color: var(--gray);
+    } */
+  }
+
+  &:nth-child(2) {
+    color: var(--retweet);
+
+    > svg path {
+      fill: var(--retweet);
+    }
+  }
+
+  &:nth-child(3) {
+    color: var(--like);
+
+    > svg path {
+      color: var(--like);
+    }
+  }
+`
+
+const iconsStyles = css`
+  width: 19px;
+  height: 19px;
+`
+
+export const CommentIcon = styled(Chat)`
+  ${iconsStyles}
+`
+
+export const RetweetIcon = styled(RocketsetIcon)`
+  ${iconsStyles}
+`
+
+export const LikeIcon = styled(Favorite)`
+  ${iconsStyles}
+`
