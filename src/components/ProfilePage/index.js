@@ -49,7 +49,7 @@ function ProfilePage() {
         </Followage>
       </ProfileData>
 
-      <Feed />
+      {/* <Feed /> */}
     </Container>
   )
 }

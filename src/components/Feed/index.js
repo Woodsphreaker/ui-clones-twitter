@@ -7,13 +7,14 @@ function Feed() {
   return (
     <Container>
       <Tab>Tweets</Tab>
-
       <Tweets>
-        <Tweet>123</Tweet>
-        <Tweet>123</Tweet>
-        <Tweet>123</Tweet>
-        <Tweet>123</Tweet>
-        <Tweet>123</Tweet>
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
       </Tweets>
     </Container>
   )

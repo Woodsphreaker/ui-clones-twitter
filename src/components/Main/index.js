@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import ProfilePage from '~/components/ProfilePage'
+import Feed from '~/components/Feed'
 
 import {
   Container,
@@ -36,6 +37,8 @@ function Main() {
       </Header>
 
       <ProfilePage />
+
+      <Feed />
 
       <BottomMenu>
         <HomeIcon
