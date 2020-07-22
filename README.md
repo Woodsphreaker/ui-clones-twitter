@@ -20,7 +20,7 @@
 
   - [ ] api
   
-   ## Live preview
+ ## Live preview
  https://youthful-bose-ef1dae.netlify.app/
  
  ## License
