@@ -11,6 +11,10 @@ import {
   EmailIcon,
   FavoriteIcon,
   ProfileIcon,
+  BottomMenu,
+  Avatar,
+  ProfileData,
+  ExitIcon,
 } from './styles'
 
 function MenuBar() {
@@ -39,7 +43,7 @@ function MenuBar() {
           <span>Favoritados</span>
         </MenuButton>
 
-        <MenuButton>
+        <MenuButton className="active">
           <ProfileIcon />
           <span>Perfil</span>
         </MenuButton>
@@ -48,6 +52,17 @@ function MenuBar() {
           <span>Twitar</span>
         </Button>
       </TopMenu>
+
+      <BottomMenu>
+        <Avatar />
+
+        <ProfileData>
+          <strong>Woods</strong>
+          <strong>@woods.com</strong>
+        </ProfileData>
+
+        <ExitIcon />
+      </BottomMenu>
     </Container>
   )
 }

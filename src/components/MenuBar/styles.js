@@ -6,12 +6,13 @@ import {
   Person,
   FavoriteBorder,
   RocketsetIcon,
+  ExitToApp,
 } from '~/styles/icons'
 
 export const Container = styled.div`
   display: none;
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 501px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,6 +47,9 @@ export const MenuButton = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
 
   > span {
     display: none;
@@ -58,7 +62,7 @@ export const MenuButton = styled.button`
     }
   }
 
-  padding: 8.25px 0;
+  padding: 8.25px 10px;
   outline: 0;
 
   & + button {
@@ -83,6 +87,20 @@ export const MenuButton = styled.button`
       }
     }
   }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--twitter-dark-hover);
+  }
+
+  &:hover,
+  &.active {
+    span,
+    svg {
+      color: var(--twitter);
+      fill: var(--twitter);
+    }
+  }
 `
 
 const iconsStyles = css`
@@ -90,10 +108,6 @@ const iconsStyles = css`
   height: 31px;
   cursor: pointer;
   fill: ${(props) => (props.active ? 'var(--twitter)' : 'var(--gray)')};
-
-  &:hover {
-    fill: var(--twitter);
-  }
 `
 
 export const HomeIcon = styled(Home)`
@@ -114,4 +128,55 @@ export const FavoriteIcon = styled(FavoriteBorder)`
 
 export const ProfileIcon = styled(Person)`
   ${iconsStyles}
+`
+
+export const BottomMenu = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+`
+
+export const Avatar = styled.div`
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--gray);
+`
+
+export const ProfileData = styled.div`
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 14px;
+
+    > span {
+      font-weight: normal;
+      color: var(--gray);
+    }
+  }
+`
+
+export const ExitIcon = styled(ExitToApp)`
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  &:hover {
+    > path {
+      color: var(--like);
+    }
+  }
 `
