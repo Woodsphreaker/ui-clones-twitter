@@ -19,3 +19,9 @@
 - [ ] Create services:
 
   - [ ] api
+  
+   ## Live preview
+ https://youthful-bose-ef1dae.netlify.app/
+ 
+ ## License
+ Distributed under the MIT license. See `LICENSE` form more information.
