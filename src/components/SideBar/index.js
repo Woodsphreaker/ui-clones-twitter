@@ -24,7 +24,7 @@ function SideBar() {
         <Body>
           <List
             title="Peoples"
-            elements={[<h1>Lorem</h1>, <h1>Lorem</h1>, <h1>Lorem</h1>]}
+            elements={[<h3>Lorem</h3>, <h3>Lorem</h3>, <h3>Lorem</h3>]}
           />
           <List
             title="Follow"
